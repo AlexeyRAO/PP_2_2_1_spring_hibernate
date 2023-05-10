@@ -38,7 +38,7 @@ public class MainApp {
          System.out.println();
       }
 
-      System.out.println(userService.getUserCar("Model 3", 3));
+     System.out.println(userService.getUserCar("Model 3", 3));
 
       context.close();
    }

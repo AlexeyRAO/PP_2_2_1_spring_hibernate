@@ -32,7 +32,8 @@ public class User {
       this.email = email;
       this.car = car;
    }
-    public Long getId() {
+
+   public Long getId() {
       return id;
    }
 
@@ -63,8 +64,7 @@ public class User {
    public void setEmail(String email) {
       this.email = email;
    }
-   @OneToOne (cascade = CascadeType.ALL)
-   @JoinColumn(name = "users_car", referencedColumnName = "id")
+
    public Car getCar() {
       return car;
    }
